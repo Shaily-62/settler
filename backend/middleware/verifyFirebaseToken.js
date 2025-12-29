@@ -36,7 +36,7 @@ const verifyFirebaseToken = async (req, res, next) => {
             role: user.role || "tenant"
         };
 
-        console.log("Decoded Firebase User:", decoded);
+        // console.log("Decoded Firebase User:", decoded);
 
         next();
     } catch (error) {
